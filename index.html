@@ -18,7 +18,16 @@
     <div class="container-fluid">
         <div class="row">
             <h1>Juego de dados</h1>
-            <img src="./dado.png" alt="dice" id="dado">
+            <!-- <img src="./dado.png" alt="dice" id="dado"> -->
+            <div id="resultados"></div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="dados" value="1" id="one-dice" checked>
+                <label class="form-check-label"  for="flexRadioDefault1">Un dado</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="dados" value="2" id="two-dice">
+                <label class="form-check-label"  for="flexRadioDefault1">Dos dados</label>
+            </div>
             <button class="btn btn-primary w-auto" id="boton">Lanza los dados</button>
         </div>
     </div>
