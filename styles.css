@@ -23,8 +23,16 @@ h1,h2,h3{
 .btn{
     margin-top: 50px;
 }
+
 #dado{
     max-width: 200px; /* usar max-width para que la imagen sea responsiva */
     margin-top: 50px;
     margin-bottom: 20px;
+    }  
+#resultados{
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center; /* centrar verticalmente */
+    align-items: center; /* centrar horizontalmente, solo funciona en contenedores*/
 }
