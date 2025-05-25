@@ -5,13 +5,14 @@ const resultados= document.getElementById("resultados")
 button.addEventListener('click',function(){
     resultados.innerHTML=""; //limpieza de imagenes anteriores
 
-    const selectDado= document.querySelector('input[name="dados"]:checked'); //Para saber que dado ha sido seleccionado
+    const selectDado= document.querySelector('input[name="dados"]:checked'); //Para saber qué dado ha sido seleccionado
     const cantidadDados= parseInt(selectDado.value); //se obtiene el value de los radio buttons y se convierten 
     // a enteros para poder ser iterados
 
     for(let i=0; i<cantidadDados;i++){ //se itera i para que genere un numero aleatorio por cada dado, en este caso hay dos, indices 0 y 1.
-        const numero=Math.floor(Math.random()*6)+1;
-        let ruta="";
+        const numero=Math.floor(Math.random()*6)+1; //numero aleatorio entre o y 6 sin incluirlo, 
+        // se suma uno para que sea un numero entre 0 y 7 sin incluirlo, posteriormente se redondea al numero mas bajo
+        let ruta=""; //ruta vacia que se llenara segun el case correspondido
          
         
         switch(numero){
