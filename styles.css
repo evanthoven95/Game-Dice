@@ -17,8 +17,8 @@ h1,h2,h3{
 }
 .row{
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: left;
 }
 .btn{
     margin-top: 50px;
@@ -34,5 +34,5 @@ h1,h2,h3{
     margin-bottom: 50px;
     display: flex;
     justify-content: center; /* centrar verticalmente */
-    align-items: center; /* centrar horizontalmente, solo funciona en contenedores*/
+    align-items: center; /*  centrar horizontalmente, solo funciona en contenedores */
 }
